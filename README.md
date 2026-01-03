@@ -118,27 +118,14 @@ python3 src/homecleaner_description/scripts/cleanup_mission.py
 
 ---
 
-## 🎥 Demo Video
-
-📹 *Video link will be added here*
-
----
-
-## 🔗 GitHub Repository
-
-```text
-https://github.com/<your-username>/homecleanerbot-ros2-navigation
-```
-
 ---
 
 ## 👥 Team Members & Task Distribution
 
 | Member | Responsibility |
 |------|---------------|
-| Member 1 | Gazebo world & robot modeling |
-| Member 2 | SLAM & Nav2 configuration |
-| Member 3 | Docker setup & testing |
+| Cihan Kurtbey | Gazebo world & robot modeling & Nav2 configuration |
+| Ali Ure | SLAM & Docker setup & testing|
 
 ---
 
