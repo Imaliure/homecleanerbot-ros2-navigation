@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="house_2plus1_world">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Zemin (Floor) -->
+    <model name="floor">
+      <static>true</static>
+      <pose>5 5 -0.05 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>12 10 0.1</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>12 10 0.1</size></box></geometry>
+          <material><ambient>0.3 0.3 0.3 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Duvarlar -->
+    <model name="wall_north"><static>true</static><pose>5 10 1.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>10 0.2 2.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>10 0.2 2.5</size></box></geometry></visual></link></model>
+    <model name="wall_south"><static>true</static><pose>5 0 1.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>10 0.2 2.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>10 0.2 2.5</size></box></geometry></visual></link></model>
+    <model name="wall_west"><static>true</static><pose>0 5 1.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 10 2.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 10 2.5</size></box></geometry></visual></link></model>
+    <model name="wall_east"><static>true</static><pose>10 5 1.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 10 2.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 10 2.5</size></box></geometry></visual></link></model>
+    <model name="inner_wall_1"><static>true</static><pose>4 2.5 1.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 5 2.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 5 2.5</size></box></geometry></visual></link></model>
+    <model name="inner_wall_2"><static>true</static><pose>1 5 1.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>2 0.2 2.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>2 0.2 2.5</size></box></geometry></visual></link></model>
+    <model name="inner_wall_3"><static>true</static><pose>9.15 5 1.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>1.5 0.2 2.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>1.5 0.2 2.5</size></box></geometry></visual></link></model>
+    <model name="inner_wall_4"><static>true</static><pose>7 2.5 1.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 5 2.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 5 2.5</size></box></geometry></visual></link></model>
+    
+    <!-- Eşyalar -->
+    <model name="sofa"><static>true</static><pose>1.5 8 0.25 0 0 0</pose><link name="l"><collision name="c"><geometry><box><size>2.0 0.8 0.5</size></box></geometry></collision><visual name="v"><geometry><box><size>2.0 0.8 0.5</size></box></geometry><material><ambient>0 0 0.5 1</ambient><diffuse>0 0 0.8 1</diffuse></material></visual></link></model>
+    <model name="kitchen_counter"><static>true</static><pose>9.2 8 0.45 0 0 0</pose><link name="l"><collision name="c"><geometry><box><size>1.4 3.5 0.9</size></box></geometry></collision><visual name="v"><geometry><box><size>1.4 3.5 0.9</size></box></geometry><material><ambient>0.7 0.7 0.7 1</ambient><diffuse>0.8 0.8 0.8 1</diffuse></material></visual></link></model>
+    <model name="bed"><static>true</static><pose>1.1 1.5 0.2 0 0 0</pose><link name="l"><collision name="c"><geometry><box><size>2.0 1.6 0.4</size></box></geometry></collision><visual name="v"><geometry><box><size>2.0 1.6 0.4</size></box></geometry><material><ambient>0.5 0 0.5 1</ambient><diffuse>0.6 0.2 0.6 1</diffuse></material></visual></link></model>
+    <model name="desk"><static>true</static><pose>5.5 1 0.35 0 0 0</pose><link name="l"><collision name="c"><geometry><box><size>1.2 0.6 0.7</size></box></geometry></collision><visual name="v"><geometry><box><size>1.2 0.6 0.7</size></box></geometry><material><ambient>0.2 0.1 0 1</ambient><diffuse>0.3 0.15 0.05 1</diffuse></material></visual></link></model>
+    <model name="sink_block"><static>true</static><pose>9 1 0.4 0 0 0</pose><link name="l"><collision name="c"><geometry><box><size>0.8 0.6 0.8</size></box></geometry></collision><visual name="v"><geometry><box><size>0.8 0.6 0.8</size></box></geometry><material><ambient>0.8 0.9 1 1</ambient><diffuse>0.9 0.95 1 1</diffuse></material></visual></link></model>
+
+  </world>
+</sdf>
